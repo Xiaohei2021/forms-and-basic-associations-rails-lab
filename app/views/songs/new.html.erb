@@ -9,6 +9,7 @@
     <% Genre.all.each do |genre|%>
       <option value="<%= genre.name %>">
     <% end %>
+      <option value="Alternative">
   </datalist>
   <%= f.label :title %> <br>
   <%= f.text_field :title %> <br>
