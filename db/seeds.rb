@@ -157,6 +157,11 @@ genres = Hash[[
   "Anime",
   "JPop",
   "Synthpop"
-].map { |genre| [genre, Genre.find_or_create_by(name: genre)] }]
+].map do |genre| 
+  [genre, Genre.find_or_create_by(name: genre)] 
+end
+]
+binding.pry
+
 
 
