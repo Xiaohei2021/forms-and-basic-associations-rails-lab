@@ -21,12 +21,12 @@ class Song < ActiveRecord::Base
     end
   end
 
-  def song_notes
-    self.notes.map do |note|
-      note.content
-    end
+  # def song_notes
+  #   self.notes.map do |note|
+  #     note.content
+  #   end
 
-  end
+  # end
 
 
 end
