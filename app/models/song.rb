@@ -12,6 +12,21 @@ class Song < ActiveRecord::Base
     self.artist ? self.artist.name : nil
   end
 
+  def song_notes=(notes)
+    notes.each do |note|
+      if note != ""
+        note = Note.create(content: note, song_id: self.id)
+        self.notes << note
+      end
+    end
+  end
+
+  def song_notes
+    self.notes.map do |note|
+      note.content
+    end
+
+  end
 
 
 end
