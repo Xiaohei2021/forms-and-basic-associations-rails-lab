@@ -161,7 +161,7 @@ genres = Hash[[
   [genre, Genre.find_or_create_by(name: genre)] 
 end
 ]
-binding.pry
+# binding.pry
 
 
 
